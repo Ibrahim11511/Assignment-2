@@ -1,0 +1,120 @@
+* {
+    text-wrap: nowrap;
+    font-family: "Poppins";
+}
+
+.toggleMedia {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-top: 50px;
+}
+
+.navBarList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navBarList li {
+    font-size: 16PX;
+    font-weight: 500;
+    color: #484848;
+    cursor: pointer;
+}
+
+.navBarButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.navBarButtons button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.navBarButtons button:first-child {
+    background-color: transparent;
+}
+
+.navBarButtons button:last-child {
+    background-color: #1572D3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: #fff;
+}
+
+@media (max-width:900px) {
+    .toggleMedia {
+        display: block;
+        width: 50px;
+        height: 30px;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .toggleMedia span {
+        display: block;
+        width: 100%;
+        height: 5px;
+        margin: 3px 0;
+        background-color: #1572D3;
+        border-radius: 2px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        -o-border-radius: 2px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 200px;
+        background-color: #f2f2f2;
+        height: 100%;
+        margin: 0;
+        padding: 50px 10px;
+        box-shadow: 0 0 10px 10px #00000028;
+    }
+
+    .nav.hide {
+        left: -100%;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nav .navBarButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

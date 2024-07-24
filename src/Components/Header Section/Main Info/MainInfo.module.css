@@ -1,0 +1,114 @@
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.rightSide {
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+
+.rightSide img {
+    width: 100%;
+    animation: zoomOut 1s ease-in-out;
+    -webkit-animation: zoomOut 2s ease-in-out;
+    transform-origin: right;
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(.5);
+        -webkit-transform: scale(.5);
+        -moz-transform: scale(.5);
+        -ms-transform: scale(.5);
+        -o-transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+    }
+}
+
+.leftSide {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.leftSide h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 48px;
+    max-width: 400px;
+    text-wrap: wrap;
+    /* margin-block: 20px; */
+}
+
+.leftSide h2 span {
+    position: relative;
+    color: #1572D3;
+}
+
+.leftSide h2 span::after {
+    content: url("../../../Images/Vector\ 1.png");
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 50px;
+    height: 10px;
+}
+
+.leftSide p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    max-width: 400px;
+    text-wrap: wrap;
+    margin-block: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+@media (max-width:900px) {
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightSide {
+        width: 80%;
+        align-self: flex-end;
+    }
+
+    .leftSide {
+        align-items: center;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .leftSide h2 {
+        font-size: clamp(20px, 30px, 40px);
+    }
+
+    .buttons {
+        justify-content: space-evenly;
+    }
+}
