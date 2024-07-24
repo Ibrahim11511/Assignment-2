@@ -1,0 +1,26 @@
+.info {
+    width: 100%;
+    margin-block: 50px;
+    text-align: center;
+}
+
+.info span {
+    display: block;
+    padding: 15px 30px;
+    background-color: #1572D31A;
+    color: #1572D3;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: auto;
+    margin-block: 20px;
+    width: fit-content;
+}
+
+.info h2 {
+    font-size: clamp(20px, 38px, 38px);
+}

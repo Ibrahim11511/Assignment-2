@@ -1,0 +1,151 @@
+.populerCarBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0px 12px 24px 0px #104C8B29;
+    max-width: 25%;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    padding: 20px;
+    /* overflow: hidden; */
+    transform-origin: bottom;
+    perspective: 1000px;
+}
+
+.innerforFlip {
+    transform-style: preserve-3d;
+}
+
+.populerCarBox:hover {
+    transform: rotateX(70deg);
+    -webkit-transform: rotateX(70deg);
+    -moz-transform: rotateX(70deg);
+    -ms-transform: rotateX(70deg);
+    -o-transform: rotateX(70deg);
+}
+
+.populerCarBox:hover .carImage {
+    transform: scale(3) rotateX(0) scaleY(3);
+    -webkit-transform: scale(3) rotateX(0) scaleY(3);
+    -moz-transform: scale(3) rotateX(0) scaleY(3);
+    -ms-transform: scale(3) rotateX(0) scaleY(3);
+    -o-transform: scale(3) rotateX(0) scaleY(3);
+}
+
+.topSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-bottom: 1px solid #212529bf;
+}
+
+.topSide h3 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #262626;
+}
+
+.rate {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rate i {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.reviews {
+    font-size: 12px;
+    font-weight: 400;
+    color: #212529bf;
+}
+
+.carImage {
+    margin-bottom: 25px;
+}
+
+.carImage img {
+    width: 100%;
+}
+
+.carDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 15px;
+}
+
+.carDetails span {
+    width: 50%;
+}
+
+.carDetails span i {
+    margin-right: 5px;
+    font-size: 12px;
+    color: #212529bf;
+}
+
+.carDetails span span {
+    color: #212529bf;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+.bottomSide {
+    margin-top: 20px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.priceContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceContainer .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #595959;
+}
+
+.priceContainer .price {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.priceContainer>span {
+    color: #595959;
+}
+
+.openSinglePage {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: #1572D3;
+    text-align: center;
+}
+
+.openSinglePage i {
+    color: #FFF;
+    margin-left: 5px;
+}
