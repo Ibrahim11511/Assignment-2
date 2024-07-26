@@ -1,0 +1,73 @@
+.howWorkSection {
+    width: 100%;
+    margin-block: 50px;
+    text-align: center;
+}
+
+.howWorkSection span {
+    display: block;
+    padding: 15px 30px;
+    background-color: #1572D31A;
+    color: #1572D3;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin: auto;
+    margin-block: 20px;
+    width: fit-content;
+}
+
+.howWorkSection h2 {
+    font-size: clamp(20px, 38px, 38px);
+    text-wrap: wrap;
+    font-weight: 700;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-block: 50px;
+}
+
+.serviceBox {
+    max-width: 20%;
+    margin-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.serviceBox i {
+    color: #1572D3;
+    font-size: 30px;
+    margin-block: 10px;
+}
+
+.serviceBox h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-block: 10px;
+}
+
+.serviceBox p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6D6D6D;
+    margin-block: 10px;
+    text-wrap: wrap;
+}
+
+.logosContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
