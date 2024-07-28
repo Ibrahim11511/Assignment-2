@@ -31,7 +31,7 @@ function App() {
               element: <AllCars />,
             },
             {
-              path: "cars/:IDCar",
+              path: `${IDCar}`,
               element: <SingleCar carID={IDCar} />,
             },
           ],
