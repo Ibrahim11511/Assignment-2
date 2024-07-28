@@ -7,8 +7,6 @@ import Root from "./Components/Root/Root";
 import "@fontsource/poppins";
 import SinglePageRoot from "./Components/All Cars Page/SinglePageRoot/SinglePageRoot";
 function App() {
-  let url = new URL(window.location);
-  let IDCar = url.pathname.slice(-1);
   const routes = createBrowserRouter([
     {
       path: "/",
@@ -31,8 +29,8 @@ function App() {
               element: <AllCars />,
             },
             {
-              path: `${IDCar}`,
-              element: <SingleCar carID={IDCar} />,
+              path: ":IDCar",
+              element: <SingleCar />,
             },
           ],
         },
