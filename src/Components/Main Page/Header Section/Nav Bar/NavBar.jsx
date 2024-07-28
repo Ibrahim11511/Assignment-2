@@ -1,6 +1,7 @@
 import Styles from "./NavBar.module.css";
-import LogoImage from "../../../Images/Frame 993.png";
+import LogoImage from "../../../../Images/Frame 993.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 export default function NavBar() {
   const [navBarActivation, setNavBarActivation] = useState(true);
   function navBarToggle() {
@@ -20,10 +21,10 @@ export default function NavBar() {
           <img src={LogoImage} alt="" />
         </div>
         <ul className={Styles.navBarList}>
-          <li>Become a renter</li>
+          <Link to={"rented"}>Become a renter</Link>
           <li>Rental deals</li>
-          <li>How it work</li>
-          <li>Why choose us</li>
+          <Link to={"work"}>How it work</Link>
+          <Link to={"us"}>Why choose us</Link>
         </ul>
         <div className={Styles.navBarButtons}>
           <button className="signIn">Sign In</button>

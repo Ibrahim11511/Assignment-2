@@ -1,6 +1,6 @@
-import carImage from "../../../Images/car 2 1.png";
-import googleStore from "../../../Images/image 2.png";
-import appStore from "../../../Images/image 3.png";
+import carImage from "../../../../Images/car 2 1.png";
+import googleStore from "../../../../Images/image 2.png";
+import appStore from "../../../../Images/image 3.png";
 import Styles from "./MainInfo.module.css";
 export default function MainInfo() {
   return (

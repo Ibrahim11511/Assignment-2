@@ -1,4 +1,4 @@
-import AudiCar from "../../Images/Audi 1.png";
+import AudiCar from "../../../Images/Audi 1.png";
 import Styles from "./ChooseUs.module.css";
 export default function ChooseUs() {
   return (

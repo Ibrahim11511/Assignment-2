@@ -13,28 +13,6 @@
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     padding: 20px;
-    transform-origin: bottom;
-    perspective: 1000px;
-}
-
-.innerforFlip {
-    transform-style: preserve-3d;
-}
-
-.populerCarBox:hover {
-    transform: rotateX(70deg);
-    -webkit-transform: rotateX(70deg);
-    -moz-transform: rotateX(70deg);
-    -ms-transform: rotateX(70deg);
-    -o-transform: rotateX(70deg);
-}
-
-.populerCarBox:hover .carImage {
-    transform: scale(3) rotateX(0) scaleY(3);
-    -webkit-transform: scale(3) rotateX(0) scaleY(3);
-    -moz-transform: scale(3) rotateX(0) scaleY(3);
-    -ms-transform: scale(3) rotateX(0) scaleY(3);
-    -o-transform: scale(3) rotateX(0) scaleY(3);
 }
 
 .topSide {

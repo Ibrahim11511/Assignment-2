@@ -1,4 +1,4 @@
-import jaguerLogo from "../../Images/jaguer.png";
+import jaguerLogo from "../../../Images/jaguer.png";
 import Styles from "./HowWork.module.css";
 export default function HowWorkSection() {
   return (
